@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        // ctx.moveTo(0,0);    //di chuyển bút đến điểm 0, 0
+        // ctx.lineTo(200,100);   //đường thẳng đến 1 tọa độ
+        // ctx.stroke(); //vẽ
+
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(100,100,100,0,1*Math.PI);
+        // arc(tọa độ tâm trục dọc, tọa độ tâm trục dọc, bán kính, nơi bắt đầu nét vẽ, nơi kết thúc)
+        //vẽ theo kim đồng hồ
+        ctx.stroke();
+    </script>
+</body>
+</html>

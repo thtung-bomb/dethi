@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // Con chuột: cân nặng.
+        //conMeo: cân nặng, ăn (chuột): cân nặng của mèo tăng lên = cân nặng của chuột.
+        //tạo 2 con, in ra thông tin từng con
+        class ConChuot {
+            constructor(ten, cannang) {
+                this.ten = ten;
+                this.cannang = cannang;
+                hienthongtin() {
+                if(cannang == 0) {
+                    alert(this.ten+ 'bi meo an roi')
+                } else {
+                    alert(this.ten + 'nang' + this.cannang);
+                }
+            }
+            }
+        }
+        class conMeo {
+            constructor(cannang) {
+                this.cannang = cannang;
+            }
+            
+        }
+
+    </script>
+</body>
+</html>

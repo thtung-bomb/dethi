@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <script>
+        var ctx = document.getElementById("myCanvas").getContext("2d");
+
+        //vẽ hình chữ nhật dài 300, cao 200,, màu tím, tọa độ 100, 80
+        //vẽ hình tròn bán kính 60, tọa độ 200, 100
+        var canvas = document.getElementById("DemoCanvas");
+        if (canvas.getContext) 
+        {
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle='#fa4b2a';    // color of fill
+        ctx.fillRect(10, 40, 140, 160); // create rectangle  
+        }
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        ctx.beginPath();
+        ctx.arc(200, 100, 60, 0,2*Math.PI);
+        ctx.stroke();
+
+
+    </script>
+</body>
+</html>

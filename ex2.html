@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="200" height="100"></canvas>
+    <script>
+
+        function drawCircle(x, y, r, color) {
+            ctx.fillStyle = color;
+            ctx.arc(x, y, r, 0, 2 * Math.PI);
+            ctx.fill();
+        }
+
+            for (let i  = 0; i < 50; i++) {
+                let x = Math.floor(Math.random() * 500);
+                let y = Math.floor(Math.random() * 500);
+                let r = Math.floor(Math.random() * 500);
+                let rgb1 = Math.floor(Math.random() * 255);
+                let rgb2 = Math.floor(Math.random() * 255);
+                let rgb3 = Math.floor(Math.random() * 255);
+                let color
+            }
+        //viết hàm nhận vào tạo: tọa độ ngang, bán kính, màu (rgb);
+        //dùng hàm để viết chương trình: tạo ra 50 hình tròn có kích cỡ, vị trí, màu sắc ngẫu nhiên
+        
+        
+    </script>
+</body>
+</html>

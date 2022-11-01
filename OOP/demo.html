@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // obj = {
+        //     ten:'Tung',
+        //     tuoi: 19,
+        //     congviec: 'Sinh vien' 
+        // }
+        // let obj2 = {
+        //     ten: 'An',
+        //     tuoi: 22,
+        //     congviec: 'Dev'
+        // }
+        // console.log(obj.ten);
+
+        //Lớp là tập hợp các đối tượng có cùng thuộc tính và phương thức.
+        class Connguoi {
+            ten;
+            tuoi;
+            congViec;
+
+            hienthithongtin() {
+                alert(this.ten+this.tuoi+this.congViec);
+            }
+        }
+        //đối tượng cụ thể của một lớp
+        let ng1 = new Connguoi();
+        ng1.ten = 'NA';
+        ng1.tuoi = '20';
+        ng1.congViec = 'GV';
+        ng1.hienthithongtin();
+
+        let ng2 = new Connguoi();
+        ng2.ten = 'tung';
+        ng2.tuoi = '19';
+        ng2.congViec = 'SV';
+        ng2.hienthithongtin();
+
+        console.log(ng1);
+        console.log(ng2);
+    </script>
+</body>
+</html>
